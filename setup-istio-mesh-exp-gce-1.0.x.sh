@@ -39,7 +39,7 @@ export GCP_OPTS="--zone ${ZONE} --project ${PROJECT}"
 # Setup Envoy on the created GCE instance
 # Navigate to the Istio directory because that is what this script expects
 pushd "${ISTIO_DIR}"
-./install/tools/setupMeshEx.sh gceMachineSetup "${VM}"
+./install/tools/setupMeshEx.sh machineSetup "${VM}"
 popd
 
 # Copy mesh expansion service setup script to gce
